@@ -1,0 +1,27 @@
+ALGORITHM verif;
+VAR 
+    a : string;
+    b : INTEGER:=0;
+    c : INTEGER:=0;
+    d : INTEGER:=1;
+    i : INTEGER:=0;
+BEGIN
+    Read(a)
+    IF (a[Length(a)]=".") THEN
+    b:=Length(a)
+    FOR i FROM 0 TO b STEP 1  DO
+        IF (a[i] in array[a,e,u,i,o,A,O,I,U,E]) THEN
+            c:=c+1;
+        END_IF
+        IF (a[i]=" ") THEN
+            d:=d+1;
+        END_IF
+    END_FOR
+    ELSE
+    Write("the setence should ends with "."")
+    END_IF
+     END_IF
+    Write("the length of the sentence is:",b)
+    Write("the number of words in the sentence is:",d)
+    Write("the number of vowels in the sentence is:",c)
+END
